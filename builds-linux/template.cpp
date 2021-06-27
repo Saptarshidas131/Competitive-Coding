@@ -22,12 +22,22 @@ typedef pair<int,int> pi;
 typedef pair<int,string> pis;
 typedef pair<string,string> ps;
 
+#define mp std::map
+#define um std::unordered_map
+#define pq_max std::priority_queue<ll>
+#define pq_min std::priority_queue<ll,vi,std::greater<ll> >
+#define MOD 1000000007
+#define NL	"\n"
+#define INF 1e18
+#define mid(l,r) (l+(r-l)/2)
+#define bitc(n) builtin_popcount(n)
 #define F first
 #define S second
 #define PB push_back
+#define EB emplace_back
 #define MP make_pair
 #define REP(i,a,b) for(int i = a; i < b; i++)
-#define T(t) while(t--)
+#define W(t) while(t--)
 
 int main()
 {
@@ -42,9 +52,17 @@ int main()
 		freopen("output.txt", "w", stdout);
 	#endif
 
-	int n;
+    clock_t begin = clock();
 
-	cin >> n;
+	// start from here
+    
+    
+    
+    
+    #ifndef ONLINE_JUDGE
+        clock_t end = clock();
+        cout << "\n\nExecution Time: " << double(end-begin)/CLOCKS_PER_SEC*1000 << " ms";
+    #endif
 
 	return 0;
-}
+} 
